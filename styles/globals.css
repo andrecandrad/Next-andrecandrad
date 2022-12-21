@@ -2,11 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply bg-background;
+}
+
 .section {
   width: 100%;
 }
 
-.container {
+.cont {
   @apply mx-auto max-w-[1240px] p-5;
 }
 
