@@ -29,6 +29,7 @@ const Hero = () => {
               <a
                 href="https://www.linkedin.com/in/andrecandrad/"
                 target="_blank"
+                rel="noreferrer"
                 className="duration-150 hover:text-purple1"
               >
                 <FaLinkedin size={40} />
@@ -36,6 +37,7 @@ const Hero = () => {
               <a
                 href="https://github.com/andrecandrad"
                 target="_blank"
+                rel="noreferrer"
                 className="duration-150 hover:text-purple1"
               >
                 <FaGithub size={40} />
@@ -43,6 +45,7 @@ const Hero = () => {
               <a
                 href=""
                 target="_blank"
+                rel="noreferrer"
                 className="duration-150 hover:text-purple1"
               >
                 <FaDiscord size={40} />
