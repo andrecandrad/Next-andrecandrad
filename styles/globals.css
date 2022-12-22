@@ -2,8 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+::selection {
+  @apply bg-purple1/70 text-white;
+}
+
 body {
-  @apply bg-background;
+  @apply bg-background font-Inter;
 }
 
 .section {
@@ -11,9 +15,16 @@ body {
 }
 
 .cont {
-  @apply mx-auto max-w-[1240px] p-5;
+  @apply mx-auto max-w-[1320px] p-5;
 }
 
 .br {
   @apply border-2 border-red-500;
+}
+
+.polygon {
+  background-image: url(../components/SVGs/polygon.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: contain;
 }

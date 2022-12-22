@@ -10,6 +10,10 @@ module.exports = {
         purple1: "#755EFF",
         background: "#f1efff",
       },
+      fontFamily: {
+        Poppins: ["Poppins", "sans-serif"],
+        Inter: ["'Inter'", "sans-serif"],
+      },
     },
   },
   plugins: [],
