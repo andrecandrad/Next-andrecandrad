@@ -115,7 +115,10 @@ const Section = () => {
             <div className="mt-6 flex w-full flex-wrap gap-2">
               {activeJob.tags.map((tag) => {
                 return (
-                  <p className="cursor-pointer rounded-full bg-purple1 px-3 font-medium text-white duration-150 ease-in hover:bg-white hover:text-purple1">
+                  <p
+                    key={tag}
+                    className="cursor-pointer rounded-full bg-purple1 px-3 font-medium text-white duration-150 ease-in hover:bg-white hover:text-purple1"
+                  >
                     {tag}
                   </p>
                 );
