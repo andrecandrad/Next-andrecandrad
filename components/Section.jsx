@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const Section = () => {
   const experiencias = [
@@ -44,7 +44,7 @@ const Section = () => {
           <span className="text-purple1">.</span>
         </h1>
         <div className="flex w-full flex-col gap-10 sm:flex-row">
-          <ul className="w-full shrink-0 basis-72 rounded-sm shadow-xl">
+          <ul className="w-full shrink-0 rounded-sm shadow-xl sm:basis-72">
             {experiencias.map((experiencia) => {
               return (
                 <li
