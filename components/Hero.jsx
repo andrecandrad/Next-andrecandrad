@@ -6,11 +6,11 @@ import { FaLinkedin, FaGithub, FaDiscord } from "react-icons/fa";
 const Hero = () => {
   return (
     <section className="polygon w-full py-8 lg:mt-24">
-      <main className="cont row grid grid-cols-2 grid-rows-4 lg:grid-cols-9 lg:grid-rows-1 lg:gap-6">
-        <section className="col-span-5 row-span-1">
+      <main className="cont flex flex-col justify-between gap-6 lg:flex-row">
+        <section className="w-full lg:w-[55%]">
           <Terminal />
         </section>
-        <section className="col-span-4 row-span-3 mt-8 h-full w-full px-5 text-center lg:mt-0 lg:text-left">
+        <section className="w-full px-5 text-center lg:mt-0 lg:w-[45%] lg:text-left">
           <h1 className="font-Poppins text-3xl font-semibold sm:text-5xl">
             Não Entendeu Nada?
           </h1>
