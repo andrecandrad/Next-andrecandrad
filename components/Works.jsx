@@ -50,10 +50,10 @@ const Works = () => {
       <div className="cont mt-8 flex flex-col items-center gap-8 md:flex-row">
         <Image
           className="dashed cursor-pointer rounded-full border-2 border-dashed border-white duration-150 hover:scale-105"
-          src={"/images/me-positive.webp"}
+          src={"/images/me-sweat.webp"}
           width={200}
           height={200}
-          alt="meu avatar memoji joinha"
+          alt="meu avatar memoji suando"
         />
         <p className="text-center text-lg font-normal text-white sm:text-xl md:text-left">
           Estes são os meus projetos mais recentes e importantes. No meu github,
