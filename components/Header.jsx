@@ -35,7 +35,7 @@ const Header = () => {
         }
       } else {
         setShadow("shadow-none");
-        if (screen.width > 640) {
+        if (screen.width <= 640) {
           setDisplayLogo("flex");
         }
       }
