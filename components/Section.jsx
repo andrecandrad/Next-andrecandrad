@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { FaCalendarAlt } from "react-icons/fa";
 
 const Section = () => {
   const experiencias = [
@@ -99,8 +100,8 @@ const Section = () => {
               <h3 className="mb-6 font-Poppins text-2xl font-normal sm:mb-0">
                 {activeJob.title}
               </h3>
-              <h5 className="text-base font-medium text-gray-600">
-                {activeJob.period}
+              <h5 className="flex items-center gap-2 text-base font-medium text-gray-600">
+                <FaCalendarAlt /> {activeJob.period}
               </h5>
             </div>
 
