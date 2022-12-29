@@ -1,9 +1,10 @@
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 const Header = () => {
   const [nav, setNav] = useState(false);
+  const [shadow, setShadow] = useState("");
 
   const handleNav = () => {
     setNav(!nav);
@@ -24,8 +25,24 @@ const Header = () => {
     },
   ];
 
+  useEffect(() => {
+    const addShadow = () => {
+      if (window.scrollY >= 90) {
+        setShadow("shadow-md");
+      } else {
+        setShadow("shadow-none");
+      }
+    };
+    window.addEventListener("scroll", addShadow);
+  }, []);
+
   return (
-    <div className="sticky left-0 top-0 w-full bg-background">
+    <div
+      className={
+        "sticky left-0 top-0 w-full bg-background duration-200 ease-in " +
+        shadow
+      }
+    >
       <header className="cont flex flex-col items-center justify-center gap-6 sm:flex-row sm:items-end sm:justify-between">
         <div className="z-10 flex flex-col items-center text-black sm:items-start">
           <h2 className="text-4xl font-semibold">André Andrade</h2>
