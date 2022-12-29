@@ -5,6 +5,7 @@ import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 const Header = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState("");
+  const [displayLogo, setDisplayLogo] = useState("flex");
 
   const handleNav = () => {
     setNav(!nav);
@@ -26,14 +27,20 @@ const Header = () => {
   ];
 
   useEffect(() => {
-    const addShadow = () => {
+    const handleMenu = () => {
       if (window.scrollY >= 90) {
         setShadow("shadow-md");
+        if (screen.width <= 640) {
+          setDisplayLogo("hidden");
+        }
       } else {
         setShadow("shadow-none");
+        if (screen.width <= 640) {
+          setDisplayLogo("flex");
+        }
       }
     };
-    window.addEventListener("scroll", addShadow);
+    window.addEventListener("scroll", handleMenu);
   }, []);
 
   return (
@@ -44,7 +51,12 @@ const Header = () => {
       }
     >
       <header className="cont flex flex-col items-center justify-center gap-6 sm:flex-row sm:items-end sm:justify-between">
-        <div className="z-10 flex flex-col items-center text-black sm:items-start">
+        <div
+          className={
+            "z-10 flex-col items-center text-black sm:items-start " +
+            displayLogo
+          }
+        >
           <h2 className="text-4xl font-semibold">André Andrade</h2>
           <p className="text-lg font-medium text-purple1 hover:font-medium">
             Desenvolvimento Front-End
