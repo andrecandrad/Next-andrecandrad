@@ -29,12 +29,16 @@ const Works = () => {
       <div className="cont flex flex-col justify-between gap-6 md:flex-row">
         {works.map((work) => {
           return (
-            <div className="flex w-full cursor-pointer flex-col justify-between gap-6 border-2 border-white p-5 text-white duration-300 ease-in hover:scale-105 hover:bg-white hover:text-purple1 md:max-w-[400px]">
+            <div
+              key={work.name}
+              className="flex w-full cursor-pointer flex-col justify-between gap-6 border-2 border-white p-5 text-white duration-300 ease-in hover:scale-105 hover:bg-white hover:text-purple1 md:max-w-[400px]"
+            >
               <h2 className="font-Poppins text-2xl font-bold">{work.name}</h2>
               <p className="text-lg">{work.desc}</p>
               <a
                 href={work.link}
                 target="_blank"
+                rel="noreferrer"
                 className="font-Poppins text-xl font-semibold"
               >
                 Visitar Projeto
@@ -60,6 +64,7 @@ const Works = () => {
           <a
             href="https://github.com/andrecandrad"
             target="_blank"
+            rel="noreferrer"
             className="cursor-pointer font-bold underline"
           >
             clique aqui

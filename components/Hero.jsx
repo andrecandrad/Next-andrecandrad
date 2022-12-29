@@ -52,11 +52,11 @@ const Hero = () => {
               </a>
             </div>
             <Image
-              className="cursor-pointer duration-150 hover:scale-125"
-              src={"/images/me-positive.webp"}
+              className="cursor-pointer duration-150 hover:scale-105"
+              src={"/images/me-sweat.webp"}
               width={150}
               height={150}
-              alt="meu avatar memoji joinha"
+              alt="meu avatar memoji suando"
             />
           </div>
         </section>
