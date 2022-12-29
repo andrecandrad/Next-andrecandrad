@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { FaCalendarAlt } from "react-icons/fa";
 
-const Section = () => {
+const Experiences = () => {
   const experiencias = [
     {
       title: "Jovem Aprendiz",
@@ -132,4 +132,4 @@ const Section = () => {
   );
 };
 
-export default Section;
+export default Experiences;
