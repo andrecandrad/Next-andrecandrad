@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import Experiences from "../components/Experiences";
 import Works from "../components/Works";
 import Conhecimentos from "../components/Conhecimentos";
+import Contact from "../components/Contact";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Experiences />
       <Works />
       <Conhecimentos />
+      <Contact />
     </>
   );
 }
