@@ -13,7 +13,7 @@ import { SiTailwindcss, SiJavascript } from "react-icons/si";
 
 const Conhecimentos = () => {
   return (
-    <div className="elipse mt-16 py-8 lg:mt-24">
+    <div className="mt-16 py-8 lg:mt-24">
       <div className="cont mb-10">
         <h1 className="font-Poppins text-3xl font-semibold sm:text-5xl">
           Conhecimentos

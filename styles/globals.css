@@ -34,10 +34,3 @@ body {
   background-color: #755eff;
   background-image: url("../public/images/geometry-bg.png");
 }
-
-.elipse {
-  background-image: url(../public/images/elipse.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
