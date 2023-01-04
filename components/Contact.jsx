@@ -1,5 +1,5 @@
 import React from "react";
-import { FaLinkedin, FaDiscord } from "react-icons/fa";
+import { FaLinkedin, FaDiscord, FaWhatsapp } from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -23,7 +23,7 @@ const Contact = () => {
               </h4>
               <p className="text-md text-gray-400 lg:text-lg">@andrecandrad</p>
             </div>
-            <FaLinkedin size={70} className="text-gray-400" />
+            <FaLinkedin className="text-6xl text-gray-400 sm:text-7xl" />
           </div>
 
           <div className="mb-12 flex items-center gap-12">
@@ -35,7 +35,19 @@ const Contact = () => {
                 andrecandrad#9079
               </p>
             </div>
-            <FaDiscord size={70} className="text-gray-400" />
+            <FaDiscord className="text-6xl text-gray-400 sm:text-7xl" />
+          </div>
+
+          <div className="mb-12 flex items-center gap-12">
+            <div className="flex flex-col border-r-2 border-gray-400 pr-[72px]">
+              <h4 className="font-Poppins text-xl font-medium text-black/70 sm:text-2xl">
+                Whatsapp
+              </h4>
+              <p className="text-md text-gray-400 sm:text-lg">
+                (31)9 9582-4620
+              </p>
+            </div>
+            <FaWhatsapp className="text-6xl text-gray-400 sm:text-7xl" />
           </div>
         </div>
       </section>
