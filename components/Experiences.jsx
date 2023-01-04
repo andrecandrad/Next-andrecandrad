@@ -67,7 +67,7 @@ const Experiences = () => {
   let isSelectedJob = null;
 
   return (
-    <section className="mt-28 mb-36 w-full py-8">
+    <section id="projects" className="mt-28 mb-36 w-full py-8">
       <div className="cont">
         <h1 className="mb-12 font-Poppins text-3xl font-semibold sm:text-5xl">
           Experiências

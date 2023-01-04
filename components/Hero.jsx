@@ -5,7 +5,7 @@ import { FaLinkedin, FaGithub, FaDiscord } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <section className="polygon w-full py-8 lg:mt-24">
+    <section id="about" className="polygon w-full py-8 lg:mt-24">
       <main className="cont flex flex-col justify-between gap-6 lg:flex-row">
         <section className="w-full lg:w-[55%]">
           <Terminal />

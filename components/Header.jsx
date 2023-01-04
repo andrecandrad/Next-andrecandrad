@@ -12,12 +12,12 @@ const Header = () => {
 
   const navLinks = [
     {
-      name: "Home",
-      link: "#home",
-    },
-    {
       name: "Sobre",
       link: "#about",
+    },
+    {
+      name: "Projetos",
+      link: "#projects",
     },
     {
       name: "Contato",

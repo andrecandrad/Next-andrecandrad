@@ -4,10 +4,7 @@ import { FaLinkedin, FaDiscord, FaWhatsapp } from "react-icons/fa";
 const Contact = () => {
   return (
     <>
-      <section className="cont flex justify-center">
-        <div className="h-1 w-36 bg-purple1"></div>
-      </section>
-      <section className="relative mt-48 h-[500px] w-full">
+      <section id="contact" className="relative mt-48 h-[500px] w-full">
         <div className="teste hidden shadow-2xl shadow-black lg:block"></div>
         <div className="cont relative flex flex-col items-center py-8 lg:items-end">
           <h2 className="text-center font-Poppins text-3xl font-semibold sm:text-5xl">
